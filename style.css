@@ -1,23 +1,54 @@
-.hello {
+#hello {
   color: #f8f9fa;
   margin-top: 20%;
-
+  letter-spacing: 2px;
+  text-align: center;
 }
 
-.languages {
-  text-align: justify;
-  text-justify: inter-word;
+.skillrow {
+  color: #bdbbed;
+  transition: all 0.2s ease-in-out;
+  font-size: x-large;
 }
 
+.skillrow:hover {
+  transform: scale(1.1);
+  border-radius: 0px;
+  background: transparent;
+  text-shadow: 9px 9px 28px #5f6d75, -9px -9px 28px #c1ddef;
+  /* text-shadow: 0px 0px 3px #d7d6f4; */
+}
+
+/* main page background gradient */
 body {
-  background: #43C6AC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #43c6ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* navbar styling */
-.nav-list{
+.nav-list {
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
+}
+
+.nav-item {
+  color: #f8f9fa;
+}
+
+#hellocontactbtn {
+  width: fit-content;
+  letter-spacing: 2px;
+  border-radius: 2rem;
+  
+
 }

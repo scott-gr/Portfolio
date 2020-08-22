@@ -10,36 +10,46 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <!-- Custom CSS -->
-    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Scott Griffin- Contact</title>
 </head>
 
 <body>
-  <div class="container navAndHello"></div>
-    <nav>
-      <div class="nav-brand">Brand</div>
-      <ul class="nav-list">
-        <li class="nav-item">Home</li>
-        <li class="nav-item">Portfolio</li>
-        <li class="nav-item">Contact</li>
-        <li class="nav-icons"></li>
-      </ul>
-
-
-    </nav>
-
-
+  <header>
+    <div class="container navAndHello">
+      <nav>
+        <!-- use favicon navicon for hamburger -->
+        <div class="nav-brand">Brand</div>
+        <ul class="nav-list">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">Portfolio</li>
+          <li class="nav-item">Contact</li>
+          <li class="nav-icons"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
     <div class="container-welcome">
-          <h1 class="display-2 hello">Hello! I'm Scott Griffin, a web developer</h1>
-          </br>
-          <h2 class="languages">HTML CSS JavaScript React / Node.js Express MongoDB </h2>
-        </div>
-        
-
+      <h1 class="display-2 d-flex justify-content-center" id="hello"></h1>
+      <div class="d-flex flex-row justify-content-center">
+        <p class="p-2 skillrow">HTML</p>
+        <p class="p-2 skillrow">CSS</p>
+        <p class="p-2 skillrow">JavaScript</p>
+        <p class="p-2 skillrow">React</p>
+        <p class="p-2 skillrow">Node.js</p>
+        <p class="p-2 skillrow">Express</p>
+        <p class="p-2 skillrow">MongoDB</p>
+      </div>
+      <div class="d-flex flex-row justify-content-center">
+        <button type="button" class="btn btn-outline-light" id="hellocontactbtn">Let's Talk</button>
       </div>
 
     </div>
-  
+  </main>
+
+
+
 
 
 
