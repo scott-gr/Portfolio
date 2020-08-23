@@ -3,12 +3,22 @@
   margin-top: 20%;
   letter-spacing: 2px;
   text-align: center;
+  margin-left:10%;
+  margin-right: 10%;
+}
+
+.welcome {
+  height: 100vh
 }
 
 .skillrow {
   color: #bdbbed;
   transition: all 0.2s ease-in-out;
   font-size: x-large;
+}
+
+.sectiontwo {
+  background-color: #bdbbed;
 }
 
 .skillrow:hover {
@@ -49,6 +59,99 @@ body {
   width: fit-content;
   letter-spacing: 2px;
   border-radius: 2rem;
-  
-
 }
+/* 
+#animatedtitle {
+  content:"";
+  width: 100%;
+  height: 100%;
+}
+
+#animatedtitle:after {
+  width: 100%;
+  height: 100%;
+  animation: jobstype 10s linear 1;
+  animation-fill-mode: forwards;
+}
+
+
+
+  @keyframes jobstype {
+  0% {
+    content: "T";
+  }
+  4% {
+    content: "Th";
+  }
+  8% {
+    content: "The";
+  }
+  12% {
+    content: "The ";
+  }
+  16% {
+    content: "The T";
+  }
+  20% {
+    content: "The Ty";
+  }
+  24% {
+    content: "The Typ";
+  }
+  28% {
+    content: "The Type";
+  }
+  32% {
+    content: "The Typew";
+  }
+  36% {
+    content: "The Typewr";
+  }
+  40% {
+    content: "The Typewri";
+  }
+  44% {
+    content: "The Typewrit";
+  }
+  48% {
+    content: "The Typewrite";
+  }
+  52% {
+    content: "The Typewriter";
+  }
+  56% {
+    content: "The Typewriter";
+  }
+  60% {
+    content: "The Typewriterr";
+  }
+  64% {
+    content: "The Typewriter";
+  }
+  68% {
+    content: "The Typewriter ";
+  }
+  72% {
+    content: "The Typewriter E";
+  }
+  76% {
+    content: "The Typewriter Ef";
+  }
+  80% {
+    content: "The Typewriter Efe";
+  }
+  84% {
+    content: "The Typewriter Efe";
+  }
+  88% {
+    content: "The Typewriter Eff";
+  }
+  92% {
+    content: "The Typewriter Effe";
+  }
+  96% {
+    content: "The Typewriter Effec";
+  }
+  100% {
+    content: "The Typewriter Effect";
+  }} */
