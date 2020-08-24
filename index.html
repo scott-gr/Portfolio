@@ -16,40 +16,64 @@
 
 <body>
   <header>
-    <div class="container navAndHello">
-      <nav>
-        <!-- use favicon navicon for hamburger -->
-        <div class="nav-brand">Brand</div>
-        <ul class="nav-list">
-          <li class="nav-item">Home</li>
-          <li class="nav-item">Portfolio</li>
-          <li class="nav-item">Contact</li>
-          <li class="nav-icons"></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <!-- use favicon navicon for hamburger -->
+      <div class="nav-brand">Brand</div>
+      <ul class="nav-list">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Portfolio</li>
+        <li class="nav-item">Contact</li>
+        <li class="nav-icons"></li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <div class="container welcome">
-      <h1 class="display-2 d-flex justify-content-center" id="hello"></h1>
-      <h1 class="display-2 d-flex justify-content-center" id=animatedtitle></h1>
-      <div class="d-flex flex-row justify-content-center">
-        <p class="p-2 skillrow">HTML</p>
-        <p class="p-2 skillrow">CSS</p>
-        <p class="p-2 skillrow">JavaScript</p>
-        <p class="p-2 skillrow">React</p>
-        <p class="p-2 skillrow">Node.js</p>
-        <p class="p-2 skillrow">Express</p>
-        <p class="p-2 skillrow">MongoDB</p>
+    <div class="section welcome">
+      <!-- Will type out 'Hello! I'm Scott Griffin, a web developer' -->
+      <h1 class="display-2 d-flex justify-content-left" id="hello"></h1>
+      <!-- Developer skills -->
+      <div class="container skillsandbtns">
+        <div class="d-flex justify-content-center skills">
+          <p class="p-2 skillrow">HTML</p>
+          <p class="p-2 skillrow">CSS</p>
+          <p class="p-2 skillrow">JavaScript</p>
+          <p class="p-2 skillrow">React</p>
+          <p class="p-2 skillrow">Node.js</p>
+          <p class="p-2 skillrow">Express</p>
+          <p class="p-2 skillrow">MongoDB</p>
+        </div>
+        <!-- Button to contact section -->
+        <div class="d-flex flex-row justify-content-center">
+          <button type="button" class="btn btn-outline-light" id="hellocontactbtn">Let's Talk</button>
+        </div>
+        <!-- Arrow button to next sectiontwo -->
+        <div class="d-flex flex-row justify-content-center">
+          <svg viewBox="0 0 16 16" class="bi bi-chevron-down" xmlns="http://www.w3.org/2000/svg"
+            onclick="window.location.href='#sectiontwo'">
+            <path fill-rule="evenodd" href="#sectiontwo"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+          </svg>
+        </div>
       </div>
-      <div class="d-flex flex-row justify-content-center">
-        <button type="button" class="btn btn-outline-light" id="hellocontactbtn">Let's Talk</button>
-      </div>
-      <input type="button"></div><input type="text">
-
     </div>
-    <div class="section sectiontwo">
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquam consectetur odio dolore corporis accusamus voluptatum similique praesentium suscipit necessitatibus, laboriosam voluptate a excepturi officia repellendus amet rerum eum exercitationem.</h2>
+    <!-- section two, biography -->
+    <div class="section" id="sectiontwo">
+      <div class="container">
+        <div class="d-flex flex-row justify-content-center biorow">
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eius, distinctio commodi enim minima
+                  laudantium. Provident et enim consequatur vero eligendi eaque accusamus praesentium, nostrum similique
+                  libero, veritatis qui assumenda?
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
