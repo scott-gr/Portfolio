@@ -89,7 +89,10 @@ nav {
   background: transparent;
   text-shadow: 9px 9px 28px #5f6d75, -9px -9px 28px #c1ddef;
 }
-/* 
+.biospacer {
+  height: 60px
+}
+
 .biocard {
-  position: 50vh;
-} */
+  margin-top: 200px;
+}
