@@ -35,6 +35,12 @@ html {
   height: 100vh;
 }
 
+#sectionthree {
+  background-color: #43c6ac;
+  height: 100vh;
+  min-height: fit-content;
+}
+
 .skillrow:hover {
   transform: scale(1.1);
   border-radius: 0px;
@@ -89,10 +95,20 @@ nav {
   background: transparent;
   text-shadow: 9px 9px 28px #5f6d75, -9px -9px 28px #c1ddef;
 }
-.biospacer {
-  height: 60px
+
+div {
+  display: block;
 }
 
-.biocard {
-  margin-top: 200px;
+.scottphoto {
+  border-radius: 50%;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+.spacer {
+  height: 100px;
 }
