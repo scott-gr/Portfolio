@@ -2,7 +2,7 @@
 let i=0;
 let text = 
 `Hello! I'm Scott Griffin, a web developer`
-let speed = 60;
+let speed = 35;
 
 const typewriter = () => {
   if (i <text.length) {

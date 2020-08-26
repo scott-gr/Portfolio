@@ -31,7 +31,6 @@ html {
 }
 
 #sectiontwo {
-  background-color: #bdbbed;
   height: 100vh;
 }
 
@@ -102,11 +101,15 @@ div {
 
 .scottphoto {
   border-radius: 50%;
+  padding: 10px;
 }
 
-.card {
-  background-color: transparent;
+.biocard {
+  background-color: #131140;
+  color: #f8f9fa;
   border: none;
+  border-radius: 12px;
+  
 }
 
 .spacer {
