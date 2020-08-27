@@ -14,9 +14,12 @@ html {
   position: relative;
   height: 25vh;
 }
+#sectionone {
+  min-height: 85vh;
+}
 
-.welcome {
-  height: 100vh
+#sectiontwo, #sectionthree, #sectionfour {
+  min-height: 95vh
 }
 
 .skillrow {
@@ -30,21 +33,10 @@ html {
   height: 50vh;
 }
 
-#sectiontwo {
-  min-height: 95vh;
-}
-
-#sectionthree {
-  background-color: #43c6ac;
-  min-height: 95vh;
-}
-
 .skillrow:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   border-radius: 0px;
   background: transparent;
-  text-shadow: 9px 9px 28px #5f6d75, -9px -9px 28px #c1ddef;
-  /* text-shadow: 0px 0px 3px #d7d6f4; */
 }
 
 /* main page background gradient */
@@ -84,10 +76,27 @@ nav {
   width:70px; 
   height:70px;
   margin-top: 80px;
+  position: sticky;
   cursor: pointer;
 }
 
 .bi-chevron-down:hover{
+  transform: scale(1.3);
+  border-radius: 0px;
+  background: transparent;
+  text-shadow: 9px 9px 28px #5f6d75, -9px -9px 28px #c1ddef;
+}
+
+.bi-chevron-up {
+  fill: #f8f9fa;
+  width:70px; 
+  height:70px;
+  margin-top: 80px;
+  position: sticky;
+  cursor: pointer;
+}
+
+.bi-chevron-up:hover{
   transform: scale(1.3);
   border-radius: 0px;
   background: transparent;
@@ -110,7 +119,7 @@ div {
 }
 
 .biocard {
-  background-color: #15131140;
+  background-color: #1513114D;
   color: #f8f9fa;
   border: none;
   border-radius: 12px;
@@ -118,7 +127,26 @@ div {
   padding:18px;
 }
 
+.biotext{
+  font-size: large;
+}
+
 .spacer {
   height: 50px;
+}
+
+.appcol {
+  padding:0;
+}
+.appcard {
+  background-color:  #1513114D;
+  color: #f8f9fa;
+  margin: 20px;
+  border:none;
+  border-radius: 12px;
+}
+
+h1, h5{
+  color: #bdbbed;
 }
 

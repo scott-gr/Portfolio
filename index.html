@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <div id=sectiononedest></div>
   <header>
     <nav>
       <!-- use favicon navicon for hamburger -->
@@ -28,7 +29,7 @@
     </nav>
   </header>
   <main>
-    <div class="section welcome">
+    <div class="section" id="sectionone">
       <!-- Will type out 'Hello! I'm Scott Griffin, a web developer' -->
       <h1 class="display-2 d-flex justify-content-left" id="hello"></h1>
       <!-- Developer skills -->
@@ -63,21 +64,21 @@
         <div class="mx-auto biocard" style="max-width: 900px;">
           <img src="./assets/scott-headshot.JPG" class="card-img scottphoto align-middle" alt="scott-headshot">
           <h1>about Scott</h1>
-          <p>I am full stack web developer creating web-apps with Javascript, React, Node, SQL, and
+          <p class="biotext">I am a full stack web developer creating web-apps with Javascript, React, Node, SQL, and
             more. I have a
             background in marketing and project management and have delivered programs and experiences for
             international
             clients. Works with diverse teams to solve problems and create innovative solutions.</p>
-          <p>I live with my wife, son, dog, and two cats in Atlanta's Kirkwood neighborhood.
+          <p class="biotext">I live with my wife, son, dog, and two cats in Atlanta's Kirkwood neighborhood.
             When I have spare
             time, I enjoy: trying new restaurants, gaming and D&D with friends, and volunteering in our
             neighborhood.</p>
-          <p>Before becoming a web developer, I worked in marketing and event program management
+          <p class="biotext">Before becoming a web developer, I worked in marketing and event program management
             for a telecom
             trade association.</p>
         </div>
         <div class="d-flex flex-row justify-content-center">
-          <svg viewBox="0 0 16 16" class="bi bi-chevron-down chevtwo" xmlns="http://www.w3.org/2000/svg"
+          <svg viewBox="0 0 16 16" class="bi bi-chevron-down" xmlns="http://www.w3.org/2000/svg"
             onclick="window.location.href='#sectionthree'">
             <path fill-rule="evenodd" href="#sectionthree"
               d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
@@ -88,17 +89,15 @@
     <div class="section" id="sectionthree">
       <div class="container justify-content-center">
         <div class="col-12 justify-content-center mx-auto">
-          <div class="row">
-            <header></header>
-          </div>
+          <div class="row spacer"></div>
           <div class="row mb-0">
-            <div class="col-md">
-              <div class="card">
+            <div class="col-md appcol">
+              <div class="card appcard">
                 <img class="card-img-top" src="assets/images/staying-in-tonight-1.png" alt="app screenshot">
                 <div class="card-body">
                   <h5 class="card-title">Staying In Tonight</h5>
-                  <p class="card-text">An application to help users decide what to do on a night in. Select a genre and
-                    receive movie and video game recommendations.</p>
+                  <p class="card-text">Select a genre and
+                    receive movie and video game recommendations. Uses two APIs to retrieve media results.</p>
                 </div>
                 <div class="card-body">
                   <a href="https://github.com/scott-gr/Staying-in-Tonight-Generator" class="card-link">GitHub Repo</a>
@@ -106,11 +105,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md">
-              <div class="card">
+            <div class="col-md appcol">
+              <div class="card appcard">
                 <img class="card-img-top" src="assets/images/Password_Generator-1.png" alt="app screenshot">
                 <div class="card-body">
-                  <h5 class="card-title">Password Generator</h5>
+                  <h5 class="card-title">The Borrowers</h5>
                   <p class="card-text">A secure random password generator, with options to include Uppercase, lowercase,
                     numbers, and special characters.</p>
                 </div>
@@ -122,21 +121,23 @@
             </div>
           </div>
           <div class="row mb-0">
-            <div class="col-md">
-              <div class="card">
-                <img class="card-img-top" src="assets/images/cats_against_banana_trees_thumbnail.png" alt="app screenshot">
+            <div class="col-md appcol">
+              <div class="card appcard">
+                <img class="card-img-top" src="assets/images/cats_against_banana_trees_thumbnail.png"
+                  alt="app screenshot">
                 <div class="card-body">
                   <h5 class="card-title">Cats Against Banana Trees/h5>
-                  <p class="card-text">A fun, full-stack 'Cards Against Humanity' clone.</p>
+                    <p class="card-text">A browser-based 'Cards Against Humanity' clone using React, MongoDB and
+                      Socket.io</p>
                 </div>
                 <div class="card-body">
-                  <a href="https://github.com/scott-gr/cats-against-bananatrees class="card-link">GitHub Repo</a>
+                  <a href="https://github.com/scott-gr/cats-against-bananatrees class=" card-link">GitHub Repo</a>
                   <a href="https://catsagainstbananatrees.herokuapp.com/" class="card-link">Deployed Heroku App</a>
                 </div>
               </div>
             </div>
-            <div class="col-md">
-              <div class="card">
+            <div class="col-md appcol">
+              <div class="card appcard">
                 <img class="card-img-top" src="assets/images/Rat_Slayer_on_Scratch.png" alt="app screenshot">
                 <div class="card-body">
                   <h5 class="card-title">Rat Slayer</h5>
@@ -148,7 +149,42 @@
               </div>
             </div>
           </div>
+          <div class="d-flex flex-row justify-content-center">
+            <svg viewBox="0 0 16 16" class="bi bi-chevron-down chevtwo" xmlns="http://www.w3.org/2000/svg"
+              onclick="window.location.href='#sectionfour'">
+              <path fill-rule="evenodd" href="#sectionfour"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="section" id="sectionfour">
+      <div class="container containertwo">
+        <div class="row spacer"></div>
+        <div class="mx-auto biocard" style="max-width: 900px;">
+          <h1>Let's Talk</h1>
+          <p class="biotext">I am a full stack web developer creating web-apps with Javascript, React, Node, SQL, and
+            more. I have a
+            background in marketing and project management and have delivered programs and experiences for
+            international
+            clients. Works with diverse teams to solve problems and create innovative solutions.</p>
+          <p class="biotext">I live with my wife, son, dog, and two cats in Atlanta's Kirkwood neighborhood.
+            When I have spare
+            time, I enjoy: trying new restaurants, gaming and D&D with friends, and volunteering in our
+            neighborhood.</p>
+          <p class="biotext">Before becoming a web developer, I worked in marketing and event program management
+            for a telecom
+            trade association.</p>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+          <svg viewBox="0 0 16 16" class="bi bi-chevron-up" xmlns="http://www.w3.org/2000/svg"
+            onclick="window.location.href='#sectionone'">
+            <path fill-rule="evenodd" href="#sectionone"
+            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+          </svg>
+        </div>
+      </div>
     </div>
   </main>
 
