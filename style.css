@@ -31,13 +31,12 @@ html {
 }
 
 #sectiontwo {
-  height: 100vh;
+  min-height: 95vh;
 }
 
 #sectionthree {
   background-color: #43c6ac;
-  height: 100vh;
-  min-height: fit-content;
+  min-height: 95vh;
 }
 
 .skillrow:hover {
@@ -101,17 +100,25 @@ div {
 
 .scottphoto {
   border-radius: 50%;
-  padding: 10px;
+  width: 284px;
+  padding-right: 2px;
+  height: 284px;
+  float: left;
+  position: relative;
+  margin:4px 20px 10px 4px;
+  shape-outside: circle();
 }
 
 .biocard {
-  background-color: #131140;
+  background-color: #15131140;
   color: #f8f9fa;
   border: none;
   border-radius: 12px;
-  
+  min-height: 325px;
+  padding:18px;
 }
 
 .spacer {
-  height: 100px;
+  height: 50px;
 }
+
