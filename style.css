@@ -33,6 +33,12 @@ html {
   height: 50vh;
 }
 
+.skills {
+  justify-content: center;
+  justify-items: center;
+  break-inside: auto;
+}
+
 .skillrow:hover {
   transform: scale(1.2);
   border-radius: 0px;
@@ -148,5 +154,30 @@ div {
 
 h1, h5{
   color: #bdbbed;
+}
+
+.whitetext {
+  color: #f8f9fa;
+  font-size: larger;
+  margin-bottom: 0;
+}
+
+.contactcard {
+  max-width: 600px;
+  padding:30px
+}
+
+a { 
+  text-decoration: none; 
+}
+
+ul {
+  list-style: none;
+  list-style-position: unset;
+  padding-left: 0;
+}
+
+li {
+  line-height: 2.5;
 }
 
