@@ -2,12 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
+hr {
+  margin: 2rem 0;
+  background-image: linear-gradient(to right, #272283, #43c6ac);
+  border: 0;
+  height: 2px;
+}
+
 #hello {
-  color: #f8f9fa;
+  color: #e7e7e7;
   margin-top: 17%;
   letter-spacing: 2px;
   text-align: center;
-  margin-left:15%;
+  margin-left: 15%;
   margin-right: 10%;
   text-align: left;
   display: block;
@@ -18,8 +25,11 @@ html {
   min-height: 85vh;
 }
 
-#sectiontwo, #sectionthree, #sectionfour {
-  min-height: 95vh
+#sectiontwo,
+#sectionthree,
+#sectionfour {
+  min-height: 95vh;
+  background-color: rgb(19, 19, 19);
 }
 
 .skillrow {
@@ -60,33 +70,182 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.gradienttext {
+  background: #43c6ac; /* fallback for old browsers*/
+  background: -webkit-linear-gradient(
+    to right,
+    #272283,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #272283,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* navbar styling */
 nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.nav-list {
+  width: 16rem;
+  height: 100vh;
+  background-color: rgb(19, 19, 19, 0.9);
   position: fixed;
   top: 0;
-  left: 0;
+  right: -26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 50;
+  transition: all 300ms ease-in-out;
+}
+
+.nav-list.active {
+  right: 0;
 }
 
 .nav-item {
-  color: #f8f9fa;
+  margin: 1.2rem 0;
+}
+
+.nav-link {
+  opacity: 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+
+.nav-link:hover {
+  color: #bdbbed;
+}
+
+.toggle {
+  background: none;
+}
+.toggle .burgline1 {
+  transform: rotate(-45deg) translate(-15px, 6px) scaleX(1);
+}
+
+.toggle .burgline2 {
+  opacity: 0;
+}
+
+.toggle .burgline3 {
+  transform: rotate(45deg) translate(-15px, -6px) scaleX(1);
+  margin-left: 0;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+.nav-brand {
+  width: 7rem;
+}
+
+.burgline1 {
+  width: 50px;
+  height: 5px;
+  margin: 10px 0;
+  background: #43c6ac; /* fallback for old browsers*/
+  background: -webkit-linear-gradient(
+    to right,
+    #272283,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #272283,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.burgline2 {
+  width: 50 px;
+  height: 5px;
+  background: #43c6ac; /* fallback for old browsers*/
+  background: -webkit-linear-gradient(
+    to right,
+    #272283,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #272283,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.burgline3 {
+  width: 50px;
+  height: 5px;
+  margin: 10px 0;
+  background: #43c6ac; /* fallback for old browsers*/
+  background: -webkit-linear-gradient(
+    to right,
+    #272283,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #272283,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.burger-menu-icon {
+  cursor: pointer;
+  z-index: 999;
+  position: fixed;
+  right: 0rem;
+  top: 0;
+  background: rgb(19, 19, 19);
+  padding: 1.2rem;
+  border-radius: 0% 0% 0% 40%;
 }
 
 #hellocontactbtn {
-  width: fit-content;
+  min-width: 200px;
+  margin-top: 20px;
   letter-spacing: 2px;
   border-radius: 2rem;
+  font-size: x-large;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  padding: 0px 10px;
 }
 
 .bi-chevron-down {
-  fill: #f8f9fa;
-  width:70px; 
-  height:70px;
-  margin-top: 80px;
+  fill: #43c6ac;
+  width: 70px;
+  height: 70px;
+  margin-top: 50px;
   position: sticky;
   cursor: pointer;
 }
 
-.bi-chevron-down:hover{
+.bi-chevron-down:hover {
   transform: scale(1.3);
   border-radius: 0px;
   background: transparent;
@@ -94,15 +253,15 @@ nav {
 }
 
 .bi-chevron-up {
-  fill: #f8f9fa;
-  width:70px; 
-  height:70px;
+  fill: #43c6ac;
+  width: 70px;
+  height: 70px;
   margin-top: 80px;
   position: sticky;
   cursor: pointer;
 }
 
-.bi-chevron-up:hover{
+.bi-chevron-up:hover {
   transform: scale(1.3);
   border-radius: 0px;
   background: transparent;
@@ -120,20 +279,28 @@ div {
   height: 284px;
   float: left;
   position: relative;
-  margin:4px 20px 10px 4px;
+  margin: 4px 20px 10px 4px;
   shape-outside: circle();
 }
 
+.scottnavphoto {
+  height: 9rem;
+  width: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 1.5rem 0;
+}
+
 .biocard {
-  background-color: #1513114D;
-  color: #f8f9fa;
+  background-color: #1513114d;
+  color: #e7e7e7;
   border: none;
   border-radius: 12px;
   min-height: 325px;
-  padding:18px;
+  padding: 18px;
 }
 
-.biotext{
+.biotext {
   font-size: large;
 }
 
@@ -142,33 +309,40 @@ div {
 }
 
 .appcol {
-  padding:0;
+  padding: 0;
 }
 .appcard {
-  background-color:  #1513114D;
-  color: #f8f9fa;
+  background-color: transparent;
+  color: #e7e7e7;
   margin: 20px;
-  border:none;
+  border: none;
   border-radius: 12px;
 }
 
-h1, h5{
-  color: #bdbbed;
+h1,
+h5 {
+  display: block;
 }
 
 .whitetext {
-  color: #f8f9fa;
+  color: #e7e7e7;
   font-size: larger;
   margin-bottom: 0;
 }
 
-.contactcard {
-  max-width: 600px;
-  padding:30px
+.tealtext {
+  color: #43c6ac;
+  font-size: medium;
+  margin-bottom: 0;
 }
 
-a { 
-  text-decoration: none; 
+.contactcard {
+  max-width: 500px;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -181,3 +355,9 @@ li {
   line-height: 2.5;
 }
 
+footer {
+  text-align: center;
+  justify-content: space-evenly;
+  background: rgb(19, 19, 19);
+  padding-bottom: 20px;
+}
