@@ -21,13 +21,13 @@ hr {
   position: relative;
   height: 25vh;
 }
-#sectionone {
+#welcome {
   min-height: 85vh;
 }
 
-#sectiontwo,
-#sectionthree,
-#sectionfour {
+#about-me,
+#my-work,
+#contact {
   min-height: 95vh;
   background-color: rgb(19, 19, 19);
 }
@@ -240,7 +240,7 @@ nav {
   fill: #43c6ac;
   width: 70px;
   height: 70px;
-  margin-top: 50px;
+  margin-top: 25px;
   position: sticky;
   cursor: pointer;
 }
@@ -259,6 +259,7 @@ nav {
   margin-top: 80px;
   position: sticky;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .bi-chevron-up:hover {

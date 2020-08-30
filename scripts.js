@@ -1,54 +1,53 @@
 // typewriter text function when page loads
-let i=0;
-let text = 
-`Hello! I'm Scott Griffin, a web developer`
+let i = 0;
+let text = `Hello! I'm Scott Griffin, a web developer`;
 let speed = 35;
 
 const typewriter = () => {
-  if (i <text.length) {
-    document.getElementById("hello").innerHTML +=text.charAt(i);
+  if (i < text.length) {
+    document.getElementById('hello').innerHTML += text.charAt(i);
     i++;
     setTimeout(typewriter, speed);
   }
-}
+};
 
 window.onload = () => {
-  typewriter()
-}
+  typewriter();
+};
 
 // navbar functions
 const selectElement = (s) => document.querySelector(s);
-const navLinks = document.querySelectorAll(".nav-link");
+const navLinks = document.querySelectorAll('.nav-link');
 
-selectElement(".burger-menu-icon").addEventListener("click", () => {
+selectElement('.burger-menu-icon').addEventListener('click', () => {
   // Toggle nav when hamburger clicked
-  selectElement(".nav-list").classList.toggle("active");
+  selectElement('.nav-list').classList.toggle('active');
 
   // animate links in nav
   navLinks.forEach((link, index) => {
     if (link.style.animation) {
-      link.style.animation = "";
+      link.style.animation = '';
     } else {
       link.style.animation = `navLinkFade 0.4s ease forwards ${
         index / 7 + 0.5
       }s`;
-      console.log(index / 7 + 0.5)
+      console.log(index / 7 + 0.5);
     }
   });
 
   //hamburger turns to X
-  selectElement(".burger-menu-icon").classList.toggle("toggle");
+  selectElement('.burger-menu-icon').classList.toggle('toggle');
 });
 
 //close navbar on nav link click
 
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    selectElement(".nav-list").classList.toggle("active");
+  link.addEventListener('click', () => {
+    selectElement('.nav-list').classList.toggle('active');
 
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
-        link.style.animation = "";
+        link.style.animation = '';
       } else {
         link.style.animation = `navLinkFade 0.5s ease forwards ${
           index / 7 + 0.5
@@ -56,7 +55,6 @@ navLinks.forEach((link) => {
       }
     });
 
-    selectElement(".burger-menu-icon").classList.toggle("toggle");
+    selectElement('.burger-menu-icon').classList.toggle('toggle');
   });
 });
-
