@@ -2,7 +2,7 @@
 let i=0;
 let text = 
 `Hello! I'm Scott Griffin, a web developer`
-let speed = 60;
+let speed = 35;
 
 const typewriter = () => {
   if (i <text.length) {
@@ -16,9 +16,47 @@ window.onload = () => {
   typewriter()
 }
 
-// // const scrollToNext= () =>{
-  
-// // }
+// navbar functions
+const selectElement = (s) => document.querySelector(s);
+const navLinks = document.querySelectorAll(".nav-link");
 
+selectElement(".burger-menu-icon").addEventListener("click", () => {
+  // Toggle nav when hamburger clicked
+  selectElement(".nav-list").classList.toggle("active");
 
-// onClick="document.getElementById('gobtn').scrollIntoView('sectiontwo');" 
+  // animate links in nav
+  navLinks.forEach((link, index) => {
+    if (link.style.animation) {
+      link.style.animation = "";
+    } else {
+      link.style.animation = `navLinkFade 0.4s ease forwards ${
+        index / 7 + 0.5
+      }s`;
+      console.log(index / 7 + 0.5)
+    }
+  });
+
+  //hamburger turns to X
+  selectElement(".burger-menu-icon").classList.toggle("toggle");
+});
+
+//close navbar on nav link click
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    selectElement(".nav-list").classList.toggle("active");
+
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.5
+        }s`;
+      }
+    });
+
+    selectElement(".burger-menu-icon").classList.toggle("toggle");
+  });
+});
+

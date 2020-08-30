@@ -9,6 +9,8 @@
   <!-- Bootstrap 5.0 CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <!-- fontawesome icons-->
+  <script src="https://use.fontawesome.com/e42e7841ba.js"></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./style.css">
   <title>Scott Griffin- Contact</title>
@@ -16,41 +18,225 @@
 
 <body>
   <header>
-    <div class="container navAndHello">
-      <nav>
-        <!-- use favicon navicon for hamburger -->
-        <div class="nav-brand">Brand</div>
-        <ul class="nav-list">
-          <li class="nav-item">Home</li>
-          <li class="nav-item">Portfolio</li>
-          <li class="nav-item">Contact</li>
-          <li class="nav-icons"></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <div class="burger-menu-icon toggle">
+        <div class="burgline1"></div>
+        <div class="burgline2"></div>
+        <div class="burgline3"></div>
+      </div>
+      <ul class="nav-list active">
+        <li class="nav-item">
+          <a href="#sectionone">
+            <img src="./assets/scott-headshot.JPG" alt="Scott Griffin" class="scottnavphoto nav-link"
+              style="animation: 0.5s ease 0.3s 1 normal forwards running navLinkFade;">
+            <span class="caption nav-link"
+              style="animation: 0.3s ease 0.642857s 1 normal forwards running navLinkFade;">Scott Griffin</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#sectiontwo" class="nav-link"
+            style="animation: 0.3s ease 0.785714s 1 normal forwards running navLinkFade;">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link"
+            style="animation: 0.3s ease 0.928571s 1 normal forwards running navLinkFade;">My Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link"
+            style="animation: 0.3s ease 1.07143s 1 normal forwards running navLinkFade;">Get in Touch</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link"
+            style="animation: 0.3s ease 1.35714s 1 normal forwards running navLinkFade;">Contact</a>
+        </li>
+        <li>
+            <a class="whitetext nav-link" style="animation: 0.3s ease 1.5s 1 normal forwards running navLinkFade;"
+              href="https://github.com/scott-gr"><i class="fa fa-github fa-lg"></i></a>
+            <a class="whitetext nav-link" style="animation: 0.3s ease 1.64286s 1 normal forwards running navLinkFade;"
+              href="https://www.linkedin.com/in/scottgriffinatl/"><i class="fa fa-linkedin fa-lg"></i></a>
+            <a class="whitetext nav-link" style="animation: 0.3s ease 1.78571s 1 normal forwards running navLinkFade;"
+              href="mailto:mscottgriffin@gmail.com"><i class="fa fa-envelope-o fa-lg"></i></a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <div class="container welcome">
-      <h1 class="display-2 d-flex justify-content-center" id="hello"></h1>
-      <h1 class="display-2 d-flex justify-content-center" id=animatedtitle></h1>
-      <div class="d-flex flex-row justify-content-center">
-        <p class="p-2 skillrow">HTML</p>
-        <p class="p-2 skillrow">CSS</p>
-        <p class="p-2 skillrow">JavaScript</p>
-        <p class="p-2 skillrow">React</p>
-        <p class="p-2 skillrow">Node.js</p>
-        <p class="p-2 skillrow">Express</p>
-        <p class="p-2 skillrow">MongoDB</p>
+    <div class="section" id="sectionone">
+      <!-- Will type out 'Hello! I'm Scott Griffin, a web developer' -->
+      <h1 class="display-2 d-flex justify-content-left" id="hello"></h1>
+      <!-- Developer skills -->
+      <div class="container skillsandbtns">
+        <div class="d-flex justify-content-center skills">
+          <p class="p-2 skillrow">HTML</p>
+          <p class="p-2 skillrow">CSS</p>
+          <p class="p-2 skillrow">JavaScript</p>
+          <p class="p-2 skillrow">React</p>
+          <p class="p-2 skillrow">Node.js</p>
+          <p class="p-2 skillrow">Express</p>
+          <p class="p-2 skillrow">MongoDB</p>
+        </div>
+        <!-- Button to contact section -->
+        <div class="d-flex flex-row justify-content-center">
+          <button type="button" onclick="window.location.href='#sectionfour'" class="btn btn-outline-light btn-lg"
+            id="hellocontactbtn">Let's Talk</button>
+        </div>
+        <!-- Arrow button to next sectiontwo -->
+        <div class="d-flex flex-row justify-content-center">
+          <svg viewBox="0 0 16 16" class="bi bi-chevron-down" xmlns="http://www.w3.org/2000/svg"
+            onclick="window.location.href='#sectiontwo'">
+            <path fill-rule="evenodd" href="#sectiontwo"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+          </svg>
+        </div>
       </div>
-      <div class="d-flex flex-row justify-content-center">
-        <button type="button" class="btn btn-outline-light" id="hellocontactbtn">Let's Talk</button>
+    </div>
+    <!-- section two, biography -->
+    <div class="section" id="sectiontwo">
+      <div class="container containertwo">
+        <div class="row spacer"></div>
+        <div class="mx-auto biocard" style="max-width: 900px;">
+          <img src="./assets/scott-headshot.JPG" class="card-img scottphoto align-middle" alt="scott-headshot">
+          <h1 class="gradienttext">about Scott</h1>
+          <p class="biotext">I am a full stack web developer creating web-apps with Javascript, React, Node, SQL, and
+            more. I have a
+            background in marketing and project management and have delivered programs and experiences for
+            international
+            clients. Works with diverse teams to solve problems and create innovative solutions.</p>
+          <p class="biotext">I live with my wife, son, dog, and two cats in Atlanta's Kirkwood neighborhood.
+            When I have spare
+            time, I enjoy: trying new restaurants, gaming and D&D with friends, and volunteering in our
+            neighborhood.</p>
+          <p class="biotext">Before becoming a web developer, I worked in marketing and event program management
+            for a telecom
+            trade association.</p>
+        </div>
+        <hr>
+        <div class="d-flex flex-row justify-content-center">
+          <svg viewBox="0 0 16 16" class="bi bi-chevron-down" xmlns="http://www.w3.org/2000/svg"
+            onclick="window.location.href='#sectionthree'">
+            <path fill-rule="evenodd" href="#sectionthree"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+          </svg>
+        </div>
       </div>
-      <input type="button"></div><input type="text">
-
     </div>
-    <div class="section sectiontwo">
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquam consectetur odio dolore corporis accusamus voluptatum similique praesentium suscipit necessitatibus, laboriosam voluptate a excepturi officia repellendus amet rerum eum exercitationem.</h2>
+    <div class="section" id="sectionthree">
+      <div class="container justify-content-center">
+        <div class="col-10 justify-content-center mx-auto">
+          <div class="row spacer"></div>
+          <div class="row mb-0">
+            <div class="col-md appcol">
+              <div class="card appcard">
+                <img class="card-img-top" src="assets/images/staying-in-tonight-1.png" alt="app screenshot">
+                <div class="card-body">
+                  <h5 class="card-title">Staying In Tonight</h5>
+                  <p class="card-text">Select a genre and
+                    receive movie and video game recommendations. Uses two APIs to retrieve media results.</p>
+                </div>
+                <div class="card-body">
+                  <a href="https://github.com/scott-gr/Staying-in-Tonight-Generator" class="card-link">GitHub Repo</a>
+                  <a href="https://scott-gr.github.io/Staying-in-Tonight-Generator/" class="card-link">Deployed Page</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md appcol">
+              <div class="card appcard">
+                <img class="card-img-top" src="assets/images/Password_Generator-1.png" alt="app screenshot">
+                <div class="card-body">
+                  <h5 class="card-title">The Borrowers</h5>
+                  <p class="card-text">A secure random password generator, with options to include Uppercase, lowercase,
+                    numbers, and special characters.</p>
+                </div>
+                <div class="card-body">
+                  <a href="https://github.com/scott-gr/gt-password-generator" class="card-link">GitHub Repo</a>
+                  <a href="https://scott-gr.github.io/gt-password-generator/" class="card-link">Deployed Page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-0">
+            <div class="col-md appcol">
+              <div class="card appcard">
+                <img class="card-img-top" src="assets/images/cats_against_banana_trees_thumbnail.png"
+                  alt="app screenshot">
+                <div class="card-body">
+                  <h5 class="card-title">Cats Against Banana Trees/h5>
+                    <p class="card-text">A browser-based 'Cards Against Humanity' clone using React, MongoDB and
+                      Socket.io</p>
+                </div>
+                <div class="card-body">
+                  <a href="https://github.com/scott-gr/cats-against-bananatrees class=" card-link">GitHub Repo</a>
+                  <a href="https://catsagainstbananatrees.herokuapp.com/" class="card-link">Deployed Heroku App</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md appcol">
+              <div class="card appcard">
+                <img class="card-img-top" src="assets/images/Rat_Slayer_on_Scratch.png" alt="app screenshot">
+                <div class="card-body">
+                  <h5 class="card-title">Rat Slayer</h5>
+                  <p class="card-text">A space-invaders inspired flash game using Scratch game development tools.</p>
+                </div>
+                <div class="card-body">
+                  <a href="https://scratch.mit.edu/projects/396284264/" class="card-link">Scratch Game Page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="d-flex flex-row justify-content-center">
+            <svg viewBox="0 0 16 16" class="bi bi-chevron-down chevtwo" xmlns="http://www.w3.org/2000/svg"
+              onclick="window.location.href='#sectionfour'">
+              <path fill-rule="evenodd" href="#sectionfour"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="section" id="sectionfour">
+      <div class="container containertwo">
+        <div class="row spacer"></div>
+        <div class="mx-auto biocard contactcard">
+          <h1 class="gradienttext">Get in Touch</h1>
+          <ul>
+            <li><a class="whitetext" href="mailto:mscottgriffin@gmail.com"><i class="fa fa-envelope-o fa-lg"></i>&nbsp;
+                mscottgriffin@gmail.com</a></li>
+            <li>
+              <p class="whitetext"><i class="fa fa-phone fa-lg"></i>&nbsp; 770.843.2923</p>
+            </li>
+            <li><a class="whitetext" href="https://github.com/scott-gr"><i class="fa fa-github fa-lg"></i>&nbsp;
+                github.com/scott-gr</a></li>
+            <li><a class="whitetext" href="https://www.linkedin.com/in/scottgriffinatl/"><i
+                  class="fa fa-linkedin fa-lg"></i>&nbsp;
+                linkedin.com/in/scottgriffinatl/</a></li>
+          </ul>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+          <svg viewBox="0 0 16 16" class="bi bi-chevron-up" xmlns="http://www.w3.org/2000/svg"
+            onclick="window.location.href='#sectionone'">
+            <path fill-rule="evenodd" href="#sectionone"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-coded-by">
+        <p class="tealtext">
+          <i class="fa fa-code fa-lg" aria-hidden="true"></i> by Scott Griffin © 2020
+        </p>
+        <p class="tealtext">
+          Built with just HTML, CSS (Bootstrap 5) and JavaScript
+        </p>
+      </div>
+      <div class="footer-social justify-content-center">
+        <a class="whitetext" href="https://github.com/scott-gr"><i class="fa fa-github fa-lg"></i>&nbsp; </a>
+        <a class="whitetext" href="https://www.linkedin.com/in/scottgriffinatl/"><i
+            class="fa fa-linkedin fa-lg"></i>&nbsp; </a>
+        <a class="whitetext" href="mailto:mscottgriffin@gmail.com"><i class="fa fa-envelope-o fa-lg"></i>&nbsp; </a>
+      </div>
+    </footer>
   </main>
 
 
@@ -65,6 +251,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
     crossorigin="anonymous"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
   <script src="scripts.js"></script>
 
 </body>
