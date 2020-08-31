@@ -38,7 +38,6 @@ hr {
   color: #bdbbed;
   transition: all 0.2s ease-in-out;
   font-size: x-large;
-  display: flexbox;
 }
 
 .skillsandbtns {
@@ -46,9 +45,12 @@ hr {
 }
 
 .skills {
+  display: flex;
   justify-content: center;
-  justify-items: center;
-  break-inside: auto;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+  text-justify: inter-word;
 }
 
 .skillrow:hover {
