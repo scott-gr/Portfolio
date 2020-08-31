@@ -11,9 +11,9 @@ const typewriter = () => {
   }
 };
 
-window.onload = () => {
-  typewriter();
-};
+// window.onload = () => {
+//   typewriter();
+// };
 
 // navbar functions
 const selectElement = (s) => document.querySelector(s);
