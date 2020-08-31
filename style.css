@@ -23,12 +23,14 @@ hr {
 }
 #welcome {
   min-height: 85vh;
+  width: 100vw;
 }
 
 #about-me,
 #my-work,
 #contact {
   min-height: 95vh;
+  width:100vw;
   background-color: rgb(19, 19, 19);
 }
 
@@ -231,10 +233,6 @@ nav {
   font-size: x-large;
 }
 
-.main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  padding: 0px 10px;
-}
 
 .bi-chevron-down {
   fill: #43c6ac;
