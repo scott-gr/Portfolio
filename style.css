@@ -193,7 +193,7 @@ nav {
   background: none;
 }
 .toggle .burgline1 {
-  transform: rotate(-45deg) translate(-15px, 6px) scaleX(.85);
+  transform: rotate(-45deg) translate(-15px, 6px) scaleX(0.85);
 }
 
 .toggle .burgline2 {
@@ -201,7 +201,7 @@ nav {
 }
 
 .toggle .burgline3 {
-  transform: rotate(45deg) translate(-15px, -6px) scaleX(.85);
+  transform: rotate(45deg) translate(-15px, -6px) scaleX(0.85);
   margin-left: 0;
 }
 
@@ -386,6 +386,9 @@ h5 {
 
 .tealtext {
   color: #43c6ac;
+}
+
+.foottext {
   font-size: medium;
   margin-bottom: 0;
 }
@@ -393,6 +396,15 @@ h5 {
 .contactcard {
   max-width: 500px;
   padding: 30px;
+}
+
+.card-link {
+  color: #bdbbed;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  color: #e7e7e7;
 }
 
 a {
