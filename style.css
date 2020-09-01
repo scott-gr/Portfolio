@@ -401,20 +401,19 @@ h5 {
 .card-link {
   color: #bdbbed;
   text-decoration: none;
-  padding-top:0;
+  padding-top: 0;
 }
 
 .card-link:hover {
   color: #e7e7e7;
-
 }
 
 .card-body {
   padding-bottom: 3px;
 }
 .card-img-top {
-  width: 350px;
-  height:245px;
+  width: 325;
+  height: auto;
 }
 
 a {
@@ -429,6 +428,10 @@ ul {
 
 li {
   line-height: 2.5;
+}
+
+#myworkheader {
+  text-align: center;
 }
 
 footer {
