@@ -1,19 +1,21 @@
-// typewriter text function when page loads
-let i = 0;
-let text = `Hello! I'm Scott Griffin, a web developer`;
-let speed = 35;
 
-const typewriter = () => {
-  if (i < text.length) {
-    document.getElementById('hello').innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typewriter, speed);
-  }
-};
+// This function can type out the intro text at the top like a typewriter. Choosing not to use it for now.
+// // typewriter text function when page loads
+// let i = 0;
+// let text = `Hello! I'm Scott Griffin, a web developer`;
+// let speed = 35;
 
-// window.onload = () => {
-//   typewriter();
+// const typewriter = () => {
+//   if (i < text.length) {
+//     document.getElementById('hello').innerHTML += text.charAt(i);
+//     i++;
+//     setTimeout(typewriter, speed);
+//   }
 // };
+
+// // window.onload = () => {
+// //   typewriter();
+// // };
 
 // navbar functions
 const selectElement = (s) => document.querySelector(s);
@@ -58,3 +60,4 @@ navLinks.forEach((link) => {
     selectElement('.burger-menu-icon').classList.toggle('toggle');
   });
 });
+

@@ -13,10 +13,19 @@
   <script src="https://use.fontawesome.com/e42e7841ba.js"></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./style.css">
-  <title>Scott Griffin</title>
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@700&family=Raleway:wght@400&display=swap"
+    rel="stylesheet">
+  <title>Scott Griffin - Portfolio</title>
 </head>
 
 <body>
+  <a name="top"></a>
   <header>
     <nav>
       <div class="burger-menu-icon">
@@ -24,61 +33,61 @@
         <div class="burgline2"></div>
         <div class="burgline3"></div>
       </div>
-      <ul class="nav-list">
+      <!-- Nav links, each to section of page-->
+      <ul class="nav-list raleway">
         <li class="nav-item">
-          <a href="#welcome">
+          <a href="#top" alt="links to first section of page">
             <img src="./assets/scott-headshot.JPG" alt="Scott Griffin" class="scottnavphoto nav-link" style>
             <span class="caption nav-link" style>Scott Griffin</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#about-me" class="nav-link" style>About Me</a>
+          <a href="#about-me" alt="link to biography section" class="nav-link" style>About Me</a>
         </li>
         <li class="nav-item">
-          <a href="#my-work" class="nav-link" style>My Work</a>
+          <a href="#my-work" alt="link to projects I've worked on" class="nav-link" style>My Work</a>
         </li>
         <li class="nav-item">
-          <a href="#contact" class="nav-link" style>Get in Touch</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact" class="nav-link" style>Contact</a>
+          <a href="#contact" alt=" link to contact info" class="nav-link" style>Get in Touch</a>
         </li>
         <li class="nav-link nav-item">
-          <a class="whitetext" style href="https://github.com/scott-gr"><i class="fa fa-github fa-lg"></i></a>&nbsp;
-          <a class="whitetext" style href="https://www.linkedin.com/in/scottgriffinatl/"><i
+          <a class="whitetext" alt="github link icon" style href="https://github.com/scott-gr"><i
+              class="fa fa-github fa-lg"></i></a>&nbsp;
+          <a class="whitetext" alt="linkedin link icon" style href="https://www.linkedin.com/in/scottgriffinatl/"><i
               class="fa fa-linkedin fa-lg"></i></a>&nbsp;
-          <a class="whitetext" style href="mailto:mscottgriffin@gmail.com"><i
+          <a class="whitetext" alt="email link icon" style href="mailto:mscottgriffin@gmail.com"><i
               class="fa fa-envelope-o fa-lg"></i></a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
+    <!--Top section of page, landing page-->
     <div class="section" id="welcome">
-      <!-- Will type out 'Hello! I'm Scott Griffin, a web developer' -->
-      <h1 class="display-2 d-flex justify-content-left" id="hello">Hi, I'm&nbsp;Scott&nbsp;Griffin,
+      <h1 class="display-2 d-flex justify-content-left biryani" id="hello">Hi, I'm&nbsp;Scott&nbsp;Griffin,
         a&nbsp;web&nbsp;developer</h1>
       <!-- Developer skills -->
       <div class="container skillsandbtns">
-        <p class="skills">
+        <p class="skills raleway">
           <span class="skillrow">&nbsp; HTML </span>
           <span class="skillrow">&nbsp; CSS </span>
           <span class="skillrow">&nbsp; JavaScript </span>
           <span class="skillrow">&nbsp; React </span>
           <span class="skillrow">&nbsp; Node.js </span>
           <span class="skillrow">&nbsp; Express </span>
+          <span class="skillrow">&nbsp; SQL </span>
           <span class="skillrow">&nbsp; MongoDB </span>
         </p>
 
         <!-- Button to contact section -->
         <div class="d-flex flex-row justify-content-center">
-          <button type="button" onclick="window.location.href='#contact'" class="btn btn-outline-light btn-lg"
-            id="hellocontactbtn">Let's Talk</button>
+          <button type="button" alt="link to contact section" onclick="window.location.href='#contact'"
+            class="btn btn-outline-light btn-lg raleway" id="hellocontactbtn">Let's Talk</button>
         </div>
         <!-- Arrow button to next sectiontwo -->
         <div class="d-flex flex-row justify-content-center">
-          <svg viewBox="0 0 16 16" class="bi bi-chevron-down" xmlns="http://www.w3.org/2000/svg"
-            onclick="window.location.href='#about-me'">
+          <svg viewBox="0 0 16 16" class="bi bi-chevron-down" alt="navigate to next section, about me"
+            xmlns="http://www.w3.org/2000/svg" onclick="window.location.href='#about-me'">
             <path fill-rule="evenodd" href="#about-me"
               d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
           </svg>
@@ -89,92 +98,108 @@
     <div class="section" id="about-me">
       <div class="container containertwo">
         <div class="row spacer"></div>
-        <div class="mx-auto biocard" style="max-width: 900px;">
+        <div class="mx-auto biocard raleway" style="max-width: 900px;">
           <img src="./assets/scott-headshot.JPG" class="card-img scottphoto align-middle" alt="scott-headshot">
           <h1 class="gradienttext display-3">about&nbsp;Scott</h1>
           <p class="biotext">I am a full stack web developer creating web-apps with Javascript, React, Node, SQL, and
             more. I have a
             background in marketing and project management and have delivered programs and experiences for
             international
-            clients. Works with diverse teams to solve problems and create innovative solutions.</p>
+            clients. In my career I've worked with diverse teams to solve problems and create innovative solutions.</p>
           <p class="biotext">I live with my wife, son, dog, and two cats in Atlanta's Kirkwood neighborhood.
             When I have spare
             time, I enjoy: trying new restaurants, gaming and D&D with friends, and volunteering in our
             neighborhood.</p>
-          <p class="biotext">Before becoming a web developer, I worked in marketing and event program management
-            for a telecom
-            trade association.</p>
+          <p class="biotext">I am open to front-end, back-end, and full-stack roles. I build responsive, accessible
+            applications, with an emphasis on mobile design. Feel free to contact me with any inquiries. </p>
         </div>
         <hr>
         <div class="d-flex flex-row justify-content-center">
-          <svg viewBox="0 0 16 16" class="bi bi-chevron-down" xmlns="http://www.w3.org/2000/svg"
-            onclick="window.location.href='#my-work'">
+          <svg viewBox="0 0 16 16" alt="navigate to next section, my work" class="bi bi-chevron-down"
+            xmlns="http://www.w3.org/2000/svg" onclick="window.location.href='#my-work'">
             <path fill-rule="evenodd" href="#my-work"
               d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
           </svg>
         </div>
       </div>
     </div>
+    <!--section two, my work-->
     <div class="section" id="my-work">
       <div class="container justify-content-center">
-        <div class="col-10 justify-content-center mx-auto">
+        <div class="col-10 justify-content-center mx-auto raleway">
           <div class="row spacer"></div>
           <div class="row mb-0">
+            <h1 class="gradienttext display-3" id="myworkheader">My Work</h1>
+            <!-- first app-->
             <div class="col-md appcol">
               <div class="card appcard">
                 <img class="card-img-top" src="./assets/stayin-in.png" alt="app screenshot">
                 <div class="card-body">
-                  <h2 class="card-title tealtext">Staying In Tonight</h5>
-                  <p class="card-text whitetext">Select a genre and
-                    receive movie and video game recommendations. Uses two APIs to retrieve media results.</p>
+                  <h3 class="card-title tealtext">Staying In Tonight</h3>
+                    <p class="card-text whitetext">Select a genre and
+                      receive movie and video game recommendations. Uses two APIs to retrieve media results.</p>
                 </div>
                 <div class="card-body">
-                  <a href="https://github.com/scott-gr/Staying-in-Tonight-Generator" class="card-link">GitHub Repo</a>
-                  <a href="https://scott-gr.github.io/Staying-in-Tonight-Generator/" class="card-link">Deployed Page</a>
+                  <a href="https://github.com/scott-gr/Staying-in-Tonight-Generator" alt="github repo"
+                    class="card-link">GitHub Repo</a>
+                  <a href="https://scott-gr.github.io/Staying-in-Tonight-Generator/" alt="deployed app"
+                    class="card-link">Deployed Page</a>
                 </div>
               </div>
             </div>
+            <!--second app-->
             <div class="col-md appcol">
               <div class="card appcard">
                 <img class="card-img-top" src="./assets/borrowers.png" alt="app screenshot">
                 <div class="card-body">
-                  <h2 class="card-title tealtext">The Borrowers</h5>
-                  <p class="card-text whitetext">MERN App using Google Books API and hashed verification to create a community network where users can "rent" books from one another.</p>
+                  <h3 class="card-title tealtext">The Borrowers</h3>
+                    <p class="card-text whitetext">MERN App using Google Books API and hashed verification to create a
+                      community network where users can "rent" books from one another.</p>
                 </div>
                 <div class="card-body">
-                  <a href="https://github.com/scott-gr/Borrowers-community-book-rental" class="card-link">GitHub Repo</a>
-                  <a href="https://desolate-caverns-47449.herokuapp.com/" class="card-link">Deployed Heroku App</a>
+                  <a href="https://github.com/scott-gr/Borrowers-community-book-rental" alt="github repo"
+                    class="card-link">GitHub Repo</a>
+                  <a href="https://desolate-caverns-47449.herokuapp.com/" alt="deployed heroku app"
+                    class="card-link">Deployed Heroku App</a>
                 </div>
               </div>
             </div>
           </div>
+          <!--starts second row of apps-->
           <div class="row mb-0">
+            <!--third app-->
             <div class="col-md appcol">
               <div class="card appcard">
-                <img class="card-img-top" src="./assets/cats_against_banana_trees_welcome.png"
-                  alt="app screenshot">
+                <img class="card-img-top" src="./assets/cats_against_banana_trees_welcome.png" alt="app screenshot">
                 <div class="card-body">
-                  <h2 class="card-title tealtext">Cats Against Banana Trees</h5>
-                    <p class="card-text whitetext">A browser-based 'Cards Against Humanity' clone using React, MongoDB and
+                  <h3 class="card-title tealtext">Cats Against Banana Trees</h3>
+                    <p class="card-text whitetext">A browser-based 'Cards Against Humanity' clone using React, MongoDB
+                      and
                       Socket.io</p>
                 </div>
                 <div class="card-body">
-                  <a href="https://github.com/scott-gr/cats-against-bananatrees" class="card-link">GitHub Repo</a>
-                  <a href="https://catsagainstbananatrees.herokuapp.com/" class="card-link">Deployed Heroku App</a>
+                  <a href="https://github.com/scott-gr/cats-against-bananatrees" alt="github repo"
+                    class="card-link">GitHub Repo</a>
+                  <a href="https://catsagainstbananatrees.herokuapp.com/" alt="deployed heroku app"
+                    class="card-link">Deployed Heroku App</a>
                 </div>
               </div>
             </div>
+            <!--4th app-->
             <div class="col-md appcol">
               <div class="card appcard">
                 <img class="card-img-top" src="./assets/password-gen.png" alt="app screenshot">
                 <div class="card-body">
-                  <h2 class="card-title tealtext">Password Generator</h5>
-                  <p class="card-text whitetext">A secure random password generator, with options to include Uppercase, lowercase,
-                    numbers, and special characters.</p>
+                  <h3 class="card-title tealtext">Password Generator</h3>
+                    <p class="card-text whitetext">A secure random password generator, with options to include
+                      Uppercase, lowercase,
+                      numbers, and special characters.</p>
                 </div>
                 <div class="card-body">
-                  <a href="https://github.com/scott-gr/gt-password-generator" class="card-link">GitHub Repo</a>
-                  <a href="https://scott-gr.github.io/gt-password-generator/" class="card-link">Deployed Page</a>
+                  <a href="https://github.com/scott-gr/gt-password-generator" alt="github repo" class="card-link">GitHub
+                    Repo</a>
+                  <a href="https://scott-gr.github.io/gt-password-generator/" alt="deployed heroku app"
+                    class="card-link">Deployed Page</a>
                 </div>
               </div>
             </div>
@@ -183,54 +208,60 @@
           <div class="d-flex flex-row justify-content-center">
             <svg viewBox="0 0 16 16" class="bi bi-chevron-down chevtwo" xmlns="http://www.w3.org/2000/svg"
               onclick="window.location.href='#contact'">
-              <path fill-rule="evenodd" href="#contact"
+              <path fill-rule="evenodd" alt="navigate to next section, contact" href="#contact"
                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
             </svg>
           </div>
         </div>
       </div>
     </div>
+    <!--section four, get in touch-->
     <div class="section" id="contact">
       <div class="container containertwo">
         <div class="row spacer"></div>
-        <div class="mx-auto biocard contactcard">
+        <div class="mx-auto biocard contactcard raleway">
           <h1 class="gradienttext display-3">Get in Touch</h1>
           <ul>
-            <li><a class="whitetext" href="mailto:mscottgriffin@gmail.com"><i class="fa fa-envelope-o fa-lg"></i>&nbsp;
+            <li><a class="whitetext" alt="email link, mscottgriffin@gmail.com" href="mailto:mscottgriffin@gmail.com"><i
+                  class="fa fa-envelope-o fa-lg"></i>&nbsp;
                 mscottgriffin@gmail.com</a></li>
             <li>
               <p class="whitetext"><i class="fa fa-phone fa-lg"></i>&nbsp; 770.843.2923</p>
             </li>
-            <li><a class="whitetext" href="https://github.com/scott-gr"><i class="fa fa-github fa-lg"></i>&nbsp;
+            <li><a class="whitetext" alt="github profile" href="https://github.com/scott-gr"><i
+                  class="fa fa-github fa-lg"></i>&nbsp;
                 github.com/scott-gr</a></li>
-            <li><a class="whitetext" href="https://www.linkedin.com/in/scottgriffinatl/"><i
+            <li><a class="whitetext" alt="linkedin profile" href="https://www.linkedin.com/in/scottgriffinatl/"><i
                   class="fa fa-linkedin fa-lg"></i>&nbsp;
                 linkedin.com/in/scottgriffinatl/</a></li>
           </ul>
         </div>
         <div class="d-flex flex-row justify-content-center">
-          <svg viewBox="0 0 16 16" class="bi bi-chevron-up" xmlns="http://www.w3.org/2000/svg"
-            onclick="window.location.href='#welcome'">
-            <path fill-rule="evenodd" href="#welcome"
+          <svg viewBox="0 0 16 16" class="bi bi-chevron-up" id="chevronup" xmlns="http://www.w3.org/2000/svg"
+            onclick="window.location.href='#top'">
+            <path fill-rule="evenodd" alt="navigate back to top of page" href="#top"
               d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
           </svg>
         </div>
       </div>
       <hr>
+      <!--footer-->
       <footer>
-        <div class="footer-coded-by">
+        <div class="footer-coded-by raleway">
           <p class="tealtext">
-            <i class="fa fa-code fa-lg" aria-hidden="true"></i> by Scott Griffin © 2020
+            <i class="fa fa-code fa-lg" aria-hidden="true"></i> by&nbsp;Scott&nbsp;Griffin&nbsp;©&nbsp;2020 ~ Built with just HTML, CSS (Bootstrap 5), and JavaScript
           </p>
           <p class="tealtext foottext">
-            Built with just HTML, CSS (Bootstrap 5), and JavaScript
+            
           </p>
         </div>
         <div class="footer-social justify-content-center">
-          <a class="whitetext" href="https://github.com/scott-gr"><i class="fa fa-github fa-lg"></i>&nbsp; </a>
-          <a class="whitetext" href="https://www.linkedin.com/in/scottgriffinatl/"><i
+          <a class="whitetext" alt="github profile" href="https://github.com/scott-gr"><i
+              class="fa fa-github fa-lg"></i>&nbsp; </a>
+          <a class="whitetext" alt="linkedin profile" href="https://www.linkedin.com/in/scottgriffinatl/"><i
               class="fa fa-linkedin fa-lg"></i>&nbsp; </a>
-          <a class="whitetext" href="mailto:mscottgriffin@gmail.com"><i class="fa fa-envelope-o fa-lg"></i>&nbsp; </a>
+          <a class="whitetext" alt="email profile" href="mailto:mscottgriffin@gmail.com"><i
+              class="fa fa-envelope-o fa-lg"></i>&nbsp; </a>
         </div>
       </footer>
     </div>

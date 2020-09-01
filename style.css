@@ -2,6 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.biryani {
+  font-family: 'Biryani', sans-serif;
+}
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
 hr {
   margin: 2rem 0;
   background-image: linear-gradient(to right, #272283, #43c6ac);
@@ -363,7 +370,9 @@ div {
 }
 
 .appcol {
-  padding: 0;
+  padding-inline: 10px;
+  margin-left: 10px;
+  margin-right:10px;
 }
 .appcard {
   background-color: transparent;
@@ -401,20 +410,19 @@ h5 {
 .card-link {
   color: #bdbbed;
   text-decoration: none;
-  padding-top:0;
+  padding-top: 0;
 }
 
 .card-link:hover {
   color: #e7e7e7;
-
 }
 
 .card-body {
   padding-bottom: 3px;
 }
 .card-img-top {
-  width: 350px;
-  height:245px;
+  width: 325;
+  height: auto;
 }
 
 a {
@@ -429,6 +437,10 @@ ul {
 
 li {
   line-height: 2.5;
+}
+
+#myworkheader {
+  text-align: center;
 }
 
 footer {
