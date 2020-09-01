@@ -2,6 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.biryani {
+  font-family: 'Biryani', sans-serif;
+}
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
 hr {
   margin: 2rem 0;
   background-image: linear-gradient(to right, #272283, #43c6ac);
@@ -363,7 +370,9 @@ div {
 }
 
 .appcol {
-  padding: 0;
+  padding-inline: 10px;
+  margin-left: 10px;
+  margin-right:10px;
 }
 .appcard {
   background-color: transparent;
