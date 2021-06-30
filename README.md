@@ -1,5 +1,5 @@
-# Portfolio
 
-Site live at https://yoscott.com
+# Thank you for checking out my portfolio
 
-Thanks for checking it out!
+## You can view the page at <https://yoscott.com>
+
